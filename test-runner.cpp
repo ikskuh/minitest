@@ -2,7 +2,6 @@
 #include <iomanip>
 
 using TestRunner = void (*)();
-
 struct Test
 {
   Test * next;
@@ -57,7 +56,6 @@ struct Test
     }
   }
 };
-
 Test * Test::first = nullptr;
 Test * Test::last = nullptr;
 
@@ -100,6 +98,5 @@ int main()
 
   return ok ? 0 : 1;
 }
-
 #include "tests.hpp"
 
